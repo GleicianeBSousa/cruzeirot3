@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 100vh; // vh trabalha com altura, então o 100vh pega a tela inteira 
+                   // a porcentagem e o vw é referente à largura
+    background-color: green;
+    background-image: url("./img/mariah\ betinho\ 1.png");
+    background-size: 100% 120vh;
+    background-repeat: no-repeat;   //
+    background-position: center;    //
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+h1{
+    font-size: 6rem;
+    color: #9d0000;
+    font-weight: 400;
+    font-family: "Itim", cursive;
+    //border: solid green;
+    width: 60%;
+    text-align: center;
+}
+
+@media (min-width: 201px) and (max-width: 500px){ //@media funciona para alterar os tamanhos da tela de visualização
+    header{
+        align-items: start;
+        h1{
+        font-size: 2rem;
+        color: rgb(255, 0, 0);
+        background-color: rgba(11, 138, 49, 0.2);
+        border-radius: 20px;
+    }
+}
+}
